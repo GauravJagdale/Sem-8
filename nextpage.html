@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the Team</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .team-section {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    /* Adding a logo */
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 100px; /* Adjust width as per your logo size */
+    }
+
+    .team-section h1 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .category {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .category:hover {
+      background-color: #f4a500;
+    }
+
+    .team-members {
+      display: flex;
+      justify-content: center; /* Center the members */
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .team-member {
+      text-align: center;
+      width: 250px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: translateY(-10px);
+    }
+
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      margin: 0 auto; /* Center the image */
+      display: block;
+      border: 5px solid black;
+    }
+
+    .team-member h3 {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .team-member p {
+      font-size: 16px;
+      color: green;
+      margin-bottom: 15px;
+    }
+
+    /* Style for the row to maintain symmetry */
+    .team-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 40px; /* Spacing between rows */
+    }
+
+    /* Styling for the clickable member card */
+    .team-member a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    
+    body{
+        background-color: #E3DDF4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="team-section">
+    <!-- Add logo here -->
+    <img src="xoriant.png" alt="Logo" class="logo"> <!-- Replace with your actual logo -->
+
+    <h1>Meet the Team</h1>
+
+    <!-- First row with 5 team members -->
+    <div class="team-row">
+      <div class="team-member">
+        <a href="steve-ambuul.html"> <!-- Link to Steve's page -->
+          <img src="img1.jfif" alt="Steve Ambuul">
+          <h3>Gaurav Jagdale</h3>
+          <p>Associate Software Engineer</p>
+          <p>Songbird</p>
+        </a>
+      </div>
+
+      <div class="team-member">
+        <a href="alden-dale.html"> <!-- Link to Alden's page -->
+          <img src="img2.jfif" alt="Alden Dale">
+          <h3>Rehan Lukade</h3>
+          <p>Associate Software Engineer</p>
+          <p>Roadrover</p>
+        </a>
+      </div>
+
+      <div class="team-member">
+        <a href="kaley-deneen.html"> <!-- Link to Kaley's page -->
+          <img src="img3.jfif" alt="Kaley Deneen">
+          <h3>Aditi Pawar</h3>
+          <p>Associate Software Engineer</p>
+          <p>Pathfinder</p>
+        </a>
+      </div>
+
+      <div class="team-member">
+        <a href="phil-dupertuis.html"> <!-- Link to Phil's page -->
+          <img src="img4.jfif" alt="Phil Dupertuis">
+          <h3>Phil Dupertuis</h3>
+          <p>Associate Software Engineer</p>
+          <p>Director of Client Services, NA</p>
+        </a>
+      </div>
+
+      <div class="team-member">
+        <a href="tony-eades.html"> <!-- Link to Tony's page -->
+          <img src="img5.jfif" alt="Tony Eades">
+          <h3>Tony Eades</h3>
+          <p>Associate Software Engineer</p>
+          <p>Chief Evangelist</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Second row with 2 new team members -->
+    <div class="team-row">
+      <div class="team-member">
+        <a href="jane-doe.html"> <!-- Link to Jane's page -->
+          <img src="img6.jfif" alt="Jane Doe">
+          <h3>Jane Doe</h3>
+          <p>Associate Software Engineer</p>
+          <p>Head of Marketing</p>
+        </a>
+      </div>
+
+      <div class="team-member">
+        <a href="john-smith.html"> <!-- Link to John's page -->
+          <img src="https://via.placeholder.com/150" alt="John Smith">
+          <h3>John Smith</h3>
+          <p>Associate Software Engineer</p>
+          <p>Lead Developer</p>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

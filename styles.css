@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E3DDF4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.logo-underline {
+    position: absolute;
+    top: 60px; /* Positioning the line right below the logo */
+    left: 0;
+    width: 100%; /* Makes the line span the full width of the page */
+    height: 2px;
+    background-color: white;
+}
+
+.container {
+    background-color: #E8DEF5;
+    border-radius: 20px;
+    padding: 40px;
+    width: 80%;
+    max-width: 900px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.text-section {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-size: 18px;
+    color: #433771;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.xplore-button {
+    background-color: #fff;
+    color: black; /* Sets the default color of the button text to white */
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.xplore-button:hover {
+    background-color: #E0D4F4;
+}
+
+.x-black-big {
+    color: green;
+    font-size: 24px; /* Makes the "X" bigger */
+    font-weight: bold; /* Makes the "X" bold */
+}
+
+.x-green{
+    color: green;
+}
+
+.image-section {
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-image {
+    border-radius: 50%;
+    width: 300px; /* Adjust size if needed */
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
