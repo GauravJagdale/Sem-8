@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Accordion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .faq-container {
+            width: 400px;
+        }
+
+        .faq-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .faq-header {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .faq-header:hover {
+            background-color: #f9f9f9;
+        }
+
+        .faq-question {
+            font-size: 1rem;
+        }
+
+        .faq-button {
+            background-color: red;
+            border: none;
+            color: white;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .faq-content {
+            display: none;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-top: 1px solid #ddd;
+        }
+
+        .faq-content p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-header">
+                <span class="faq-question">Do you accept Bitcoin?</span>
+                <button class="faq-button">+</button>
+            </div>
+            <div class="faq-content">
+                <p>Yes, we accept Bitcoin as a form of payment.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                <span class="faq-question">What do I need to get started?</span>
+                <button class="faq-button">+</button>
+            </div>
+            <div class="faq-content">
+                <p>To get started, you need an account and a valid payment method.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                <span class="faq-question">Do you have a referral scheme?</span>
+                <button class="faq-button">+</button>
+            </div>
+            <div class="faq-content">
+                <p>Yes, we offer a referral program where you can earn rewards.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                <span class="faq-question">When can I get started?</span>
+                <button class="faq-button">+</button>
+            </div>
+            <div class="faq-content">
+                <p>You can get started immediately after registering your account.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get all FAQ items
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const header = item.querySelector('.faq-header');
+            const content = item.querySelector('.faq-content');
+            const button = item.querySelector('.faq-button');
+
+            header.addEventListener('click', () => {
+                // Toggle visibility of the content
+                const isOpen = content.style.display === 'block';
+                
+                content.style.display = isOpen ? 'none' : 'block';
+                button.textContent = isOpen ? '+' : '-';
+            });
+        });
+    </script>
+
+</body>
+</html>
